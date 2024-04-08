@@ -1,0 +1,19 @@
+{
+	"0": {
+		"id": 0,
+		"info": {
+			"macAddress": "6341b8836122e874",
+			"keepAlive": 30,
+			"active": true,
+			"typeGateway": false,
+			"name": "scw-virt-gw",
+			"location": {
+				"latitude": 48.873251913313645,
+				"longitude": 2.318823038172653,
+				"altitude": 35
+			},
+			"ip": "",
+			"port": ""
+		}
+	}
+}
