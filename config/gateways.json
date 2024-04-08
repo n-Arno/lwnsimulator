@@ -8,9 +8,9 @@
 			"typeGateway": false,
 			"name": "scw-virt-gw",
 			"location": {
-				"latitude": 48.873251913313645,
-				"longitude": 2.318823038172653,
-				"altitude": 35
+                                "latitude": 48.87321098473539,
+                                "longitude": 2.3186104716400773,
+                                "altitude": 35
 			},
 			"ip": "",
 			"port": ""

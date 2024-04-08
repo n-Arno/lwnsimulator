@@ -20,12 +20,17 @@ RUN make build
 
 FROM alpine:latest AS run
 
+RUN apk add --no-cache tini
+
 # Copy initial config
 COPY config /opt/lwnsim/
 
 # Copy built binary
 COPY --from=build /LWN-Simulator/bin/lwnsimulator /opt/lwnsim/lwnsimulator
 
+# Copy entrypoint
+COPY entrypoint.sh /entrypoint.sh
+
 WORKDIR /opt/lwnsim
 EXPOSE 8000
-ENTRYPOINT ["/opt/lwnsim/lwnsimulator"]
+ENTRYPOINT ["/entrypoint.sh"]

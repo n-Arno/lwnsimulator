@@ -10,11 +10,11 @@
 			"name": "scw-test-device1",
 			"status": {
 				"mtype": "ConfirmedDataUp",
-				"payload": "{\"name\":\"device1\",\"value\":1}",
+				"payload": "hello from device 1",
 				"active": true,
 				"infoUplink": {
-					"fport": 1,
-					"fcnt": 1
+					"fport": 2,
+					"fcnt": 0
 				},
 				"fcntDown": 0,
 				"base64": false,
@@ -22,19 +22,19 @@
 			},
 			"configuration": {
 				"region": 1,
-				"sendInterval": 10,
-				"ackTimeout": 2,
+				"sendInterval": 60,
+				"ackTimeout": 3,
 				"range": 10000,
 				"disableFCntDown": true,
 				"supportedOtaa": true,
-				"supportedADR": false,
+				"supportedADR": true,
 				"supportedFragment": true,
 				"supportedClassB": false,
 				"supportedClassC": false,
 				"dataRate": 0,
 				"rx1DROffset": 0,
-				"nbRetransmission": 1,
-				"rssi": 0
+				"nbRetransmission": 2,
+				"rssi": -60
 			},
 			"location": {
 				"latitude": 48.87321098473539,
@@ -44,14 +44,14 @@
 			"rxs": [
 				{
 					"delay": 1000,
-					"durationOpen": 3000,
+					"durationOpen": 5000,
 					"channel": {
-						"active": false,
-						"enableUplink": false,
-						"freqUplink": 0,
-						"freqDownlink": 0,
+						"active": true,
+						"enableUplink": true,
+						"freqUplink": 868100000,
+						"freqDownlink": 868100000,
 						"minDR": 0,
-						"maxDR": 0
+						"maxDR": 5
 					},
 					"dataRate": 0
 				},
@@ -82,11 +82,11 @@
 			"name": "scw-test-device2",
 			"status": {
 				"mtype": "ConfirmedDataUp",
-				"payload": "{\"name\":\"device2\",\"value\":2}",
+				"payload": "hello from device 2",
 				"active": true,
 				"infoUplink": {
-					"fport": 1,
-					"fcnt": 1
+					"fport": 2,
+					"fcnt": 0
 				},
 				"fcntDown": 0,
 				"base64": false,
@@ -94,36 +94,36 @@
 			},
 			"configuration": {
 				"region": 1,
-				"sendInterval": 10,
-				"ackTimeout": 2,
+				"sendInterval": 60,
+				"ackTimeout": 3,
 				"range": 10000,
 				"disableFCntDown": true,
 				"supportedOtaa": true,
-				"supportedADR": false,
+				"supportedADR": true,
 				"supportedFragment": true,
 				"supportedClassB": false,
 				"supportedClassC": false,
 				"dataRate": 0,
 				"rx1DROffset": 0,
-				"nbRetransmission": 1,
-				"rssi": 0
+				"nbRetransmission": 2,
+				"rssi": -60
 			},
 			"location": {
-				"latitude": 48.87323921132982,
-				"longitude": 2.318611129231259,
-				"altitude": 50
+				"latitude": 48.87321098473539,
+				"longitude": 2.3186104716400773,
+				"altitude": 35
 			},
 			"rxs": [
 				{
 					"delay": 1000,
-					"durationOpen": 3000,
+					"durationOpen": 5000,
 					"channel": {
-						"active": false,
-						"enableUplink": false,
-						"freqUplink": 0,
-						"freqDownlink": 0,
+						"active": true,
+						"enableUplink": true,
+						"freqUplink": 868100000,
+						"freqDownlink": 868100000,
 						"minDR": 0,
-						"maxDR": 0
+						"maxDR": 5
 					},
 					"dataRate": 0
 				},
