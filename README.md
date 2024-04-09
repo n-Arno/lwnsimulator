@@ -9,6 +9,8 @@ LoraWan simulator based on [this repository](https://github.com/UniCT-ARSLab/LWN
 | scw-test-device2 | b602655e35690b7b | 4c98ea5a445c805f2579488cac7878ee    |
 | scw-virt-gw      | 6341b8836122e874 | Gateway bridge via "localhost:1700" |
 
+![simulation](./img/lwnsim.png)
+
 Usage
 -----
 
@@ -30,3 +32,5 @@ docker compose up -d
 ```
 
 You can then go to `http://localhost:8000` to start the simulation and to `http://localhost:8080` to check on the devices joining.
+
+![chirpstack](./img/chirpstack.png)
