@@ -10,14 +10,14 @@
 			"name": "scw-test-device1",
 			"status": {
 				"mtype": "ConfirmedDataUp",
-				"payload": "hello from device 1",
+				"payload": "AGf/1wFxBNL7LgAAA2hEBHMnmwWG+1AKjBJc",
 				"active": true,
 				"infoUplink": {
 					"fport": 2,
 					"fcnt": 0
 				},
 				"fcntDown": 0,
-				"base64": false,
+				"base64": true,
 				"aligncurrentTime": false
 			},
 			"configuration": {
@@ -82,14 +82,14 @@
 			"name": "scw-test-device2",
 			"status": {
 				"mtype": "ConfirmedDataUp",
-				"payload": "hello from device 2",
+				"payload": "AGf/2AFxBNL7LgAAA2hFBHMnmgWG+1AKjBJc",
 				"active": true,
 				"infoUplink": {
 					"fport": 2,
 					"fcnt": 0
 				},
 				"fcntDown": 0,
-				"base64": false,
+				"base64": true,
 				"aligncurrentTime": false
 			},
 			"configuration": {
