@@ -9,8 +9,8 @@ COPY LWN-Simulator /LWN-Simulator
 # Switch to git folder 
 WORKDIR /LWN-Simulator
 
-# Clean and update dependencies
-RUN rm go.mod go.sum && go mod init github.com/arslab/lwnsimulator && go mod tidy
+# Clean and update dependencies (done already in folder)
+# RUN rm go.mod go.sum && go mod init github.com/arslab/lwnsimulator && go mod tidy
 
 # Add build dependencies
 RUN make install-dep && ln -s /root/go/bin/statik /usr/bin/statik

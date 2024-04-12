@@ -4,7 +4,7 @@ import "math"
 
 const RADIUS = float64(6378.16)
 
-//Location is a position of device
+// Location is a position of device
 type Location struct {
 	Latitude  float64 `json:"latitude"`
 	Longitude float64 `json:"longitude"`

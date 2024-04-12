@@ -4,7 +4,7 @@ import (
 	"errors"
 )
 
-//Channel that every device must handle
+// Channel that every device must handle
 type Channel struct {
 	Active            bool   `json:"active"`
 	EnableUplink      bool   `json:"enableUplink"` //true enable | false avoid
@@ -14,7 +14,7 @@ type Channel struct {
 	MaxDR             uint8  `json:"maxDR"`
 }
 
-//UpdateChannel sets new field of channel
+// UpdateChannel sets new field of channel
 func (c *Channel) UpdateChannel(freq uint32, minDR uint8, maxDR uint8) {
 
 	if freq == 0 {

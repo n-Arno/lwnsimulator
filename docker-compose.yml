@@ -10,6 +10,15 @@ services:
     ports:
       - 8000:8000
 
+  thingsboard:
+    image: thingsboard/tb-postgres
+    volumes:
+      - thingsboarddata:/data
+    depends_on:
+      - chirpstack
+    ports:
+      - 9090:9090
+
   chirpstack:
     image: chirpstack/chirpstack:4
     command: -c /etc/chirpstack
@@ -77,3 +86,4 @@ services:
 volumes:
   postgresqldata:
   redisdata:
+  thingsboarddata:

@@ -6,7 +6,7 @@ import (
 	"github.com/brocaar/lorawan"
 )
 
-//Downlink set with info of resp
+// Downlink set with info of resp
 type InformationDownlink struct {
 	MType         lorawan.MType     `json:"-"` //per FPending
 	FOptsReceived []lorawan.Payload `json:"-"`

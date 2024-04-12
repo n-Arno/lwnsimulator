@@ -8,11 +8,10 @@ def around(val):
 def main():
    frame = LppFrame()
    
-   frame.add_temperature(0, around(-4.1))
-   frame.add_accelerometer(1, 1.234, -1.234, 0)
-   frame.add_humidity(3, around(34.5))
-   frame.add_pressure(4, around(1014.1))
-   frame.add_gyrometer(5, -12, 27, 47)
+   frame.add_temperature(0, around(15.0))
+   frame.add_humidity(1, around(49.0))
+   frame.add_pressure(2, around(1035.0))
+   frame.add_accelerometer(3, 1.5, -1.5, 1.5) # to trigger a real movement
 
    buffer = bytes(frame)
    print(b64encode(buffer))
